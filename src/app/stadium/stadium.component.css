@@ -1,0 +1,20 @@
+#stadium-detail {
+    font-size: 16px;
+}
+
+#stadium-detail > p {
+    margin: 1px 0;
+    font-weight: bold;
+}
+
+#answer {
+    color:darkred;
+}
+
+img {
+    max-width: 500px;
+	float: left;
+	margin: 0 2px; /*0 at top/bottom 2 left/right*/
+	border: solid 1px #A9A9A9;
+}
+

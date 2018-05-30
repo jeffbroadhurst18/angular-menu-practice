@@ -1,0 +1,84 @@
+ *{ 
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+}
+
+nav {
+    float: left;
+    width:100%;
+    background: darkblue;
+    position: relative;
+    color: white;
+}
+
+nav ul li {
+    list-style: none; 
+    float: left; 
+
+}
+
+ul {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    display: block; 
+    text-decoration: none;
+    padding: 10px;
+    background: darkblue;
+}
+
+nav ul li a:hover {
+    color : darkblue;
+    background-color: turquoise;
+    cursor: pointer;
+} 
+
+#title > a {
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#title {
+     list-style: none;
+}
+
+nav ul li ul#main-menu {
+    /* width: 97%; */
+    padding: 0 0;
+    background: darkblue;
+    position:absolute; /* relative to the Nav bar that has postion relative*/
+    display: none; /* removes the space also*/
+}
+
+nav ul li:hover ul#main-menu { 
+        display:block;
+        left:0;
+}
+
+nav ul li ul#main-menu2 {
+    /* width: 97%; */
+    padding: 0 0;
+    background: darkblue;
+    position:absolute; /* relative to the Nav bar that has postion relative*/
+    display: none; /* removes the space also*/
+}
+
+nav ul li:hover ul#main-menu2 { 
+        display:block;
+        left:104px;
+}
+
+
+#stadium {
+    border: 1px solid black;
+    height: 500px;
+    width:600px;
+    color:black;
+    top:200px;
+    position :relative;
+    padding-left: 50px;
+}
