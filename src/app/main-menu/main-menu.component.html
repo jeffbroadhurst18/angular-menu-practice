@@ -1,6 +1,6 @@
 <nav>
   <ul>
-    <li id="title"><a href="#">Premiership</a>
+    <li class="title"><a href="#">Premiership</a>
       <ul id="main-menu">
         <li>
           <a (click)=setClub(1)>Liverpool</a>
@@ -9,7 +9,7 @@
         </li>
       </ul>
     </li>
-    <li id="title"><a href="#">Championship</a>
+    <li class="title"><a href="#">Championship</a>
       <ul id="main-menu2">
         <li>
           <a (click)=setClub(4)>Sheffield Wednesday</a>
@@ -17,8 +17,16 @@
         </li>
       </ul>
     </li>
+    <li class="title"><a href="#">Parkrun</a>
+      <ul id="main-menu3">
+        <li>
+          <a class="router-link" [routerLink]="['/parkrun']">Cheshire</a>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <div id="stadium">
-<app-stadium></app-stadium>
+<!-- <app-stadium></app-stadium> -->
+<router-outlet></router-outlet>
 </div>

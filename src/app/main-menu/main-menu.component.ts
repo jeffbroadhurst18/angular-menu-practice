@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StadiumComponent } from '../stadium/stadium.component';
 import { DataServiceService } from '../data-service.service';
+import { Router } from '@angular/router';
+import { AppRoutingModule } from '../app-routing/app-routing.module';
 
 @Component({
   selector: 'app-main-menu',

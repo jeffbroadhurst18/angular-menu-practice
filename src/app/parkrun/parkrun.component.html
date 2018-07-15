@@ -1,0 +1,18 @@
+<div>Long {{clicked.lng}} Lat {{clicked.lat}}</div> 
+
+
+<div id="mapper">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom] = "zoom" [draggableCursor] = "'pointer;'" (mapClick)="placeMarker($event)" >
+    <agm-marker id="clicked-marker" *ngIf="clicked" [latitude]="clicked.lat" [longitude]="clicked.lng" [label]="clicked.label"
+    [iconUrl]="clicked.icon"></agm-marker>
+    <agm-marker *ngFor="let m of markers;" [latitude]="m.lat" [longitude]="m.lng" [label]="m.label"></agm-marker>
+    </agm-map>
+    <div id="info">
+        <table>
+            <tr *ngFor="let d of distances">
+                <td>{{d.name}}</td>
+                <td>{{d.value}} km</td>
+            </tr>
+        </table>
+    </div>
+</div>
