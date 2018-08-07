@@ -6,7 +6,7 @@
     <agm-marker id="clicked-marker" *ngIf="clicked" [latitude]="clicked.lat" [longitude]="clicked.lng" [label]="clicked.label"
     [iconUrl]="clicked.icon"></agm-marker>
     <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng" [label]="m.label"></agm-marker>
-    <agm-marker *ngFor="let g of grids" [latitude]="g.lat" [longitude]="g.lng" [iconUrl]="g.icon"></agm-marker>
+    <agm-marker *ngFor="let g of grids" [latitude]="g.lat" [longitude]="g.lng" [iconUrl]="g.icon" [opacity]="0.3"></agm-marker>
     </agm-map>
     <div id="info">
         <table>
